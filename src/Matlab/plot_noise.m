@@ -119,7 +119,7 @@ for table={accelNoiseTable}
         plot(taus, r, 'LineWidth', 1);
         title(strcat(X_name,' Autocorrelation'));
         xlabel('\tau (s)');
-        xlim([taus(1), taus(end)]);
+        xlim([-40, 40]);
         ylabel('Linear Acceleration Squared (m/s^2)^2');
         grid on;
     end
@@ -310,7 +310,7 @@ for table={gyroNoiseTable}
         plot(taus, r, 'LineWidth', 1);
         title(strcat(X_name,' Autocorrelation'));
         xlabel('\tau (s)');
-        xlim([taus(1), taus(end)]);
+        xlim([-20, 20]);
         ylabel('Angular Velocity Squared (rad/s)^2');
         grid on;
     end
